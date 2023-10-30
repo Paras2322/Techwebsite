@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+$brand-clr: #565387;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,26 +11,28 @@
   
   .navbar {
     background-color: #fff !important;
+
+    .navbar-brand {
+      font-size: 1.9rem !important;
+      color: $brand-clr !important;
+    }
+    
+    & a {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+    
+    .menu_active {
+      font-weight: bold;
+      border-bottom: 1px solid $brand-clr;
+    }
+    
+    & a:hover {
+      color: #3498db !important;
+    }
+    
   }
   
-  .navbar-brand {
-    font-size: 1.9rem !important;
-    color: #565387 !important;
-  }
-  
-  .navbar a {
-    font-size: 1.3rem;
-    text-transform: capitalize;
-  }
-  
-  .menu_active {
-    font-weight: bold;
-    border-bottom: 1px solid #565387;
-  }
-  
-  .navbar a:hover {
-    color: #3498db !important;
-  }
   
   @media (max-width: 991px) {
     .navbar-brand {
